@@ -1,0 +1,230 @@
+{
+    "overview": {
+        "shape": [
+            1000,
+            20
+        ],
+        "dtypes": "Event id                            object\nOpened date                 datetime64[ns]\nCAUSAL_VERBATIM                     object\nCORRECTION_VERBATIM                 object\nCUSTOMER_VERBATIM                   object\nBUILD_DATE             datetime64[ns, UTC]\nBUILD_PLANT_DESC                    object\nCAUSAL_CD_DESC                      object\nCOMPLAINT_CD_DESC                   object\nIN_USE_DATE            datetime64[ns, UTC]\nMAKE                                object\nMODEL                               object\nMODLYR                               int64\nPLANT                               object\nTrigger                             object\nFailure Component                   object\nFailure Condition                   object\nAdditional Context                  object\nFix Component                       object\nFix Condition                       object\ndtype: object",
+        "missing": "Event id               0\nOpened date            0\nCAUSAL_VERBATIM        0\nCORRECTION_VERBATIM    0\nCUSTOMER_VERBATIM      0\nBUILD_DATE             0\nBUILD_PLANT_DESC       0\nCAUSAL_CD_DESC         0\nCOMPLAINT_CD_DESC      0\nIN_USE_DATE            1\nMAKE                   0\nMODEL                  0\nMODLYR                 0\nPLANT                  0\nTrigger                0\nFailure Component      0\nFailure Condition      0\nAdditional Context     0\nFix Component          0\nFix Condition          0\ndtype: int64",
+        "duplicates": "0"
+    },
+    "statistics": {
+        "numerical_summary": "                         Opened date  MODLYR\ncount                           1000  1000.0\nmean   2020-07-23 07:43:40.800000256  2020.0\nmin              2019-08-27 00:00:00  2020.0\n25%              2020-03-09 00:00:00  2020.0\n50%              2020-07-14 00:00:00  2020.0\n75%              2020-11-25 00:00:00  2020.0\nmax              2021-06-01 00:00:00  2020.0\nstd                              NaN     0.0",
+        "categorical_summary": {
+            "Event id": {
+                "unique_values": 1000,
+                "top_values": {
+                    "D-15259": 1,
+                    "D-14801": 1,
+                    "D-14869": 1,
+                    "D-14555": 1,
+                    "D-14704": 1
+                }
+            },
+            "CAUSAL_VERBATIM": {
+                "unique_values": 944,
+                "top_values": {
+                    "RADIO": 10,
+                    "RADIO INTERNAL FAILURE": 6,
+                    "INTERNAL FAILURE": 5,
+                    "INTERNAL FAULT IN RADIO": 5,
+                    "RADIO SHORTED": 5
+                }
+            },
+            "CORRECTION_VERBATIM": {
+                "unique_values": 952,
+                "top_values": {
+                    "REPLACED RADIO": 11,
+                    "replace radio": 11,
+                    "REPLACE RADIO": 5,
+                    "REPLACED AND PROGRAMMED RADIO": 4,
+                    "replaced radio": 4
+                }
+            },
+            "CUSTOMER_VERBATIM": {
+                "unique_values": 990,
+                "top_values": {
+                    "Audio Entertainment Navigation Other issues": 5,
+                    "RADIO NOT WORKING": 2,
+                    "Audio Entertainment Navigation Audio": 2,
+                    "RADIO INOP": 2,
+                    "CUSTOMER STATES THE RADIO IS INOP": 2
+                }
+            },
+            "BUILD_PLANT_DESC": {
+                "unique_values": 8,
+                "top_values": {
+                    "Fort Wayne": 217,
+                    "Flint": 208,
+                    "Silao": 199,
+                    "Spring Hill - Truck": 169,
+                    "Lansing Delta": 142
+                }
+            },
+            "CAUSAL_CD_DESC": {
+                "unique_values": 38,
+                "top_values": {
+                    "Module/Component-No/Incorrect Communication": 380,
+                    "Module/Component-Shorted": 237,
+                    "Module/Component-Registers Incorrectly": 121,
+                    "Wiring/Electrical/Sensors-No/Incorrect Communication": 50,
+                    "Module/Component-Broken": 41
+                }
+            },
+            "COMPLAINT_CD_DESC": {
+                "unique_values": 9,
+                "top_values": {
+                    "Audio/Entertainment/Navigation - Audio": 337,
+                    "Audio/Entertainment/Navigation - Other issues": 263,
+                    "Audio/Entertainment/Navigation - Communication": 194,
+                    "Audio/Entertainment/Navigation - Video": 103,
+                    "Features/Controls/Displays - Other issues": 47
+                }
+            },
+            "MAKE": {
+                "unique_values": 4,
+                "top_values": {
+                    "ThunderVolt": 488,
+                    "NovaSprint": 335,
+                    "NebulaCruiser": 125,
+                    "TurboFlux": 52
+                }
+            },
+            "MODEL": {
+                "unique_values": 23,
+                "top_values": {
+                    "HyperFury X": 148,
+                    "TurboFlare": 117,
+                    "QuantumRider": 109,
+                    "AeroSpecter": 86,
+                    "NebulaJet": 77
+                }
+            },
+            "PLANT": {
+                "unique_values": 8,
+                "top_values": {
+                    "FTW": 217,
+                    "FLT": 208,
+                    "SIL": 199,
+                    "SHT": 169,
+                    "DEL": 142
+                }
+            },
+            "Trigger": {
+                "unique_values": 2,
+                "top_values": {
+                    "['No Additional Functionality']": 999,
+                    "['When Reversing']": 1
+                }
+            },
+            "Failure Component": {
+                "unique_values": 5,
+                "top_values": {
+                    "['Audio Unit', 'Display']": 996,
+                    "['Radio', 'Display', 'Radio']": 1,
+                    "['Display', 'OnStar', 'Radio Module']": 1,
+                    "['Display']": 1,
+                    "['Radio']": 1
+                }
+            },
+            "Failure Condition": {
+                "unique_values": 5,
+                "top_values": {
+                    "['Black Screen']": 996,
+                    "['Controls Irresponsive', 'Black Screen']": 1,
+                    "['Inoperative', 'Black Screen', 'No Sound']": 1,
+                    "['Inoperative', 'Inoperative', 'Internal Fault']": 1,
+                    "['Malfunction']": 1
+                }
+            },
+            "Additional Context": {
+                "unique_values": 2,
+                "top_values": {
+                    "['No Additional Context']": 999,
+                    "['While Driving']": 1
+                }
+            },
+            "Fix Component": {
+                "unique_values": 3,
+                "top_values": {
+                    "['Radio', 'USB']": 997,
+                    "['Radio']": 2,
+                    "['Radio', 'SPS']": 1
+                }
+            },
+            "Fix Condition": {
+                "unique_values": 2,
+                "top_values": {
+                    "['Replaced', 'Programmed']": 998,
+                    "['Replaced']": 2
+                }
+            }
+        },
+        "temporal_analysis": {
+            "time_range": [
+                "2019-08-27 00:00:00",
+                "2021-06-01 00:00:00"
+            ],
+            "avg_issues_per_month": 43.47826086956522
+        }
+    },
+    "insights": {
+        "failure_patterns": {
+            "component_failure_rates": "Failure Component\n['Audio Unit', 'Display']                0.996\n['Radio', 'Display', 'Radio']            0.001\n['Display', 'OnStar', 'Radio Module']    0.001\n['Display']                              0.001\n['Radio']                                0.001\nName: proportion, dtype: float64",
+            "common_component_condition_pairs": "Failure Condition                      ['Black Screen']  \\\nFailure Component                                         \n['Audio Unit', 'Display']                           995   \n['Display', 'OnStar', 'Radio Module']                 0   \n['Display']                                           1   \n['Radio', 'Display', 'Radio']                         0   \n['Radio']                                             0   \n\nFailure Condition                      ['Controls Irresponsive', 'Black Screen']  \\\nFailure Component                                                                  \n['Audio Unit', 'Display']                                                      1   \n['Display', 'OnStar', 'Radio Module']                                          0   \n['Display']                                                                    0   \n['Radio', 'Display', 'Radio']                                                  0   \n['Radio']                                                                      0   \n\nFailure Condition                      ['Inoperative', 'Black Screen', 'No Sound']  \\\nFailure Component                                                                    \n['Audio Unit', 'Display']                                                        0   \n['Display', 'OnStar', 'Radio Module']                                            0   \n['Display']                                                                      0   \n['Radio', 'Display', 'Radio']                                                    1   \n['Radio']                                                                        0   \n\nFailure Condition                      ['Inoperative', 'Inoperative', 'Internal Fault']  \\\nFailure Component                                                                         \n['Audio Unit', 'Display']                                                             0   \n['Display', 'OnStar', 'Radio Module']                                                 1   \n['Display']                                                                           0   \n['Radio', 'Display', 'Radio']                                                         0   \n['Radio']                                                                             0   \n\nFailure Condition                      ['Malfunction']  \nFailure Component                                       \n['Audio Unit', 'Display']                            0  \n['Display', 'OnStar', 'Radio Module']                0  \n['Display']                                          0  \n['Radio', 'Display', 'Radio']                        0  \n['Radio']                                            1  ",
+            "time_to_failure": "count                            999\nmean     217 days 04:33:52.432432432\nstd      177 days 08:12:15.441155560\nmin              -354 days +00:00:00\n25%                 76 days 00:00:00\n50%                202 days 00:00:00\n75%                350 days 00:00:00\nmax                615 days 00:00:00\ndtype: object"
+        },
+        "top_root_causes": {
+            "CAUSAL_CD_DESC": {
+                "8": "Module/Component-No/Incorrect Communication",
+                "16": "Module/Component-Shorted",
+                "13": "Module/Component-Registers Incorrectly",
+                "35": "Wiring/Electrical/Sensors-No/Incorrect Communication",
+                "3": "Module/Component-Broken",
+                "41": "Wiring/Electrical/Sensors-Shorted",
+                "23": "Other-Follow operation",
+                "22": "Other-Campaign/ Tech Bulletin",
+                "24": "Other-No trouble found  - adjusted / reprogrammed",
+                "38": "Wiring/Electrical/Sensors-Registers Incorrectly"
+            },
+            "Failure Component": {
+                "8": "['Audio Unit', 'Display']",
+                "16": "['Audio Unit', 'Display']",
+                "13": "['Audio Unit', 'Display']",
+                "35": "['Audio Unit', 'Display']",
+                "3": "['Audio Unit', 'Display']",
+                "41": "['Audio Unit', 'Display']",
+                "23": "['Audio Unit', 'Display']",
+                "22": "['Audio Unit', 'Display']",
+                "24": "['Audio Unit', 'Display']",
+                "38": "['Audio Unit', 'Display']"
+            },
+            "count": {
+                "8": 379,
+                "16": 236,
+                "13": 120,
+                "35": 50,
+                "3": 41,
+                "41": 23,
+                "23": 22,
+                "22": 22,
+                "24": 21,
+                "38": 12
+            }
+        },
+        "issue_clusters": {
+            "0": 118,
+            "1": 250,
+            "2": 261,
+            "3": 233,
+            "4": 138
+        }
+    },
+    "topics": [
+        "Topic 1: signal, xm, radio, come, work, customer, sirius, state, minute, sat",
+        "Topic 2: audio, radio, customer, entertainment, state, screen, issue, navigation, touch, blue",
+        "Topic 3: camera, working, state, customer, radio, screen, backup, inop, advise, check",
+        "Topic 4: phone, radio, vehicle, update, customer, state, bluetooth, went, time, work",
+        "Topic 5: radio, state, customer, screen, blank, inop, check, display, advise, black"
+    ]
+}
